@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dip">
+
+    <LinearLayout
+        android:id="@+id/label_text_normal_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="37dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/label_text_btn"
+            android:layout_width="37dip"
+            android:layout_height="37dip"
+            android:background="#02a3f4"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label_text_notnil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="*"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/label_text_single"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_toLeftOf="@id/label_text_normal_layout"
+        android:background="@drawable/axeac_bg_edit"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:hint="@string/axeac_labeltext_hint"
+        android:singleLine="true"
+        android:textColor="#B2B2B2" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/label_text_mult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/label_text_normal_layout"
+        android:background="@drawable/axeac_bg_edit"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dp"
+        android:textColor="#B2B2B2"
+        android:hint="@string/axeac_labeltext_hint"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/label_text_img"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/label_text_single"
+        android:visibility="gone" />
+
+</RelativeLayout>

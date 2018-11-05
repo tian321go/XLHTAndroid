@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <LinearLayout
+        android:id="@+id/op_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/axeac_alert_dialog_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#5f5f5f"
+            android:gravity="center_horizontal"
+            android:text="@string/axeac_op_huanjie"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5f5f5f"
+            android:gravity="center_horizontal"
+            android:text="@string/axeac_op_chuliren"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/op_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/axeac_alert_dialog_bottom"
+        android:orientation="horizontal">
+
+        <com.axeac.android.sdk.customview.AutoButtonView
+            android:id="@+id/operating_dialog_posbtn"
+            style="@style/CustomButton"
+            android:text="@string/axeac_msg_confirm" />
+
+        <com.axeac.android.sdk.customview.AutoButtonView
+            android:id="@+id/operating_dialog_negbtn"
+            style="@style/CustomButton"
+            android:text="@string/axeac_msg_confirm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/op_bottom"
+        android:layout_below="@id/op_top"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/operating_aids_list"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1.0"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/white"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none"></ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/result_minor_text"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/axeac_has_choiced_person"
+                android:textSize="16sp" />
+
+            <ListView
+                android:id="@+id/listview_choosed"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1.0"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/white"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none"></ListView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="#5f5f5f" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:textSize="16sp"
+                    android:id="@+id/searchTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.3" />
+
+                <ImageView
+                    android:id="@+id/searchBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7"
+                    android:src="@drawable/axeac_map_search" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/operating_users_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/white"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

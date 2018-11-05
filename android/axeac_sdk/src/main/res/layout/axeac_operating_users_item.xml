@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip">
+
+    <ImageView
+        android:id="@+id/operating_user_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:visibility="invisible"
+        android:src="@drawable/axeac_label_mutichoose_enable" />
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/operating_user_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

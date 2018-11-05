@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
+//获取时间戳
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+def verCode = 121
+android {
+    signingConfigs {
+        config {
+            keyAlias 'demo.keystore'
+            keyPassword 'kuaihu123.'
+            storeFile file('D:/kuaihu.keystore')
+            storePassword 'kuaihu123.'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.axeac.android.client"
+        minSdkVersion 20
+        targetSdkVersion 26
+        versionCode verCode
+        versionName APP_VERSION
+        flavorDimensions "code"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86', 'x86_64', 'mips', 'mips64'
+            manifestPlaceholders = [
+                    XG_ACCESS_ID:"2100310203",
+                    XG_ACCESS_KEY:"A4VW3PU19A5I",
+            ]
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def timenow
+            if("true".equals(IS_JENKINS)){
+                timenow = JENKINS_TIME
+            }else{
+                timenow = getDate()
+            }
+            if (variant.buildType.name.equals('debug')) {
+                outputFileName = 'AXEAC_' + APP_VERSION + '_' + timenow + '-debug.apk'
+            } else {
+                outputFileName = 'AXEAC_' + APP_VERSION + '_' + timenow + '-release.apk'
+            }
+        }
+    }
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        compile 'com.android.support:appcompat-v7:26.0.2'
+        compile project(':axeac_sdk')
+        compile 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
+        compile 'com.github.zhaokaiqiang.klog:library:1.4.0'
+        compile 'com.jakewharton:butterknife:7.0.1'
+        compile 'com.baoyz.swipemenulistview:library:1.3.0'
+        compile 'com.tencent.xinge:xinge:4.0.3-Beta'
+        compile 'com.tencent.wup:wup:1.0.0.E-alpha'
+        compile 'com.tencent.mid:mid:4.0.7'
+    }
+}

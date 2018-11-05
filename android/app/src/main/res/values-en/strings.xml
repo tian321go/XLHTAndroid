@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">WorkCenter</string>
+
+    <string name="login_input_username">Username</string>
+    <string name="login_input_password">Password</string>
+    <string name="login_input_username_hint">Username</string>
+    <string name="login_input_password_hint">Password</string>
+    <string name="login_input_serverinf_hint">Default Server</string>
+    <string name="login_select_savepassword">Remember me</string>
+    <string name="login_btn_login">Log in</string>
+    <string name="found_new">Find a new version of the update&#8230;</string>
+    <string name="no_new">Currently is the latest version&#8230;</string>
+
+    <!-- 登录页面 -->
+    <string name="init_loading">Connection failure，overtime</string>
+    <string name="login_loading">Loading&#8230;</string>
+    <string name="login_username_hint">Username&#8230;</string>
+    <string name="login_password_hint">Password&#8230;</string>
+    <string name="login_url_hint">Default Server&#8230;</string>
+    <string name="login_login">Log in</string>
+    <string name="login_register">Register</string>
+    <string name="login_visitor">Guest</string>
+    <string name="login_issavepwd">Remember me</string>
+    <string name="login_defaulturl">Default Server</string>
+    <string name="login_usernotnull">User name cannot be empty&#8230;</string>
+    <string name="login_pwdnotnull">Password can not be empty&#8230;</string>
+    <string name="login_pwderror">Passwords should be composed of numbers and letters, not less than 6 bits&#8230;</string>
+    <string name="login_pwderrormsg">Please contact the administrator to modify&#8230;</string>
+    <string name="login_urlnotnull">Server URL is empty, can not be an effective link&#8230;</string>
+    <string name="login_pressedexit">Then click one exit procedure!</string>
+
+    <string name="server_list">Server List</string>
+
+    <string name="axeac_back">Back</string>
+
+
+    <!-- 下载 -->
+    <string name="download_prompt">Download tips</string>
+    <string name="download_prompt_msg">Downloading files, please wait a moment&#8230;</string>
+    <string name="download_fail_nosdcard">File download failed, please check whether the SD card is normal!</string>
+    <string name="download_fail_ioexp">Read file stream exception, Download failed!</string>
+    <string name="download_succ_toast">File download success! Sure you want to open it?</string>
+    <string name="download_apk_prompt">Version update prompt</string>
+    <string name="download_apk_confirm">Update</string>
+    <string name="download_apk_cancel">Cancel</string>
+    <string name="download_apk_nosdcard">SD card does not exist, can not be updated to download!</string>
+    <string name="download_apk_done">Download complete，install or cancel</string>
+    <string name="download_open_exp">File open exception, did not find the corresponding browser</string>
+
+
+    <!-- 设置页面 -->
+    <string name="settings_label">Setting</string>
+    <string name="copy">Device ID replication succeeded</string>
+    <string name="clearcache">Clean up successfully</string>
+
+    <string name="settings_deviceid">Device ID</string>
+    <string name="settings_curusers">User Setting</string>
+    <string name="settings_indexsetups">Home Setting</string>
+    <string name="settings_systemsetups">System Setting</string>
+    <string name="settings_network">Network Setting</string>
+    <string name="settings_clearcache">Clear Cache</string>
+    <string name="settings_demo">Demo</string>
+    <string name="settings_network_add">New Network Setting</string>
+    <string name="settings_network_modify">Edit Network Setting</string>
+    <string name="settings_certmanager">Certificate  Manager</string>
+    <string name="settings_certfile">Certificate Information</string>
+    <string name="settings_password">Password Setting</string>
+    <string name="settings_binding">Binding settings</string>
+    <string name="settings_messagebox">Message box</string>
+    <string name="settings_instantmessage">IM</string>
+    <string name="settings_flowcount">流量统计</string>
+    <string name="settings_gridview">Speed Dial Navigation</string>
+    <string name="settings_listview">List Navigation</string>
+    <string name="settings_updatepwd">Change Password</string>
+    <string name="settings_sysadmin">System administrator</string>
+    <string name="settings_about">About</string>
+    <string name="settings_exit">Exit</string>
+    <string name="settings_freshicon">Fresh Navigation</string>
+    <string name="settings_loginout">Logout</string>
+
+    <!-- 系统设置 -->
+    <string name="systemsetups_thirdverify">Third party verification</string>
+    <string name="systemsetups_usevpn">Use VPN</string>
+    <string name="systemsetups_checknewversion">Automatic detection of new version</string>
+    <string name="systemsetups_backgroundmsg">Open back message </string>
+    <string name="systemsetups_usecert">Use cert</string>
+    <string name="systemsetups_msgtimes">Message polling cycle</string>
+    <string name="systemsetups_choosetimes">Please fill in the time（Time range 1-60）</string>
+    <string name="systemsetups_y">CONFIRM</string>
+    <string name="systemsetups_n">CANCEL</string>
+    <string name="systemsetups_success">Set successfully</string>
+    <string name="systemsetups_fail">Setup failed</string>
+
+    <!-- 网络管理 -->
+    <string name="network_serverdesc">Name</string>
+    <string name="network_isHttps">Label</string>
+    <string name="network_serverip">Server</string>
+    <string name="network_serverport">Port</string>
+    <string name="network_servername">Service</string>
+    <string name="network_toast_descnotnull">HTTP Config Name cannot be empty</string>
+    <string name="network_toast_httpipnotnull">HTTP Service address cannot be empty</string>
+    <string name="network_toast_httpportnotnull">HTTP Service port cannot be empty</string>
+    <string name="network_toast_httpnamenotnull">HTTP Service name cannot be empty</string>
+    <string name="network_toast_ftpportnotnull">FTP Service port cannot be empty</string>
+    <string name="network_toast_ftppathnotnull">FTP Remote directory cannot be empty</string>
+    <string name="network_toast_vpnipnotnull">VPN Service address cannot be empty</string>
+    <string name="network_toast_vpnportnotnull">VPN Service port cannot be empty</string>
+    <string name="network_toast_descexist">The server name already exists</string>
+    <string name="network_toast_urlnotnull">The server connection address format is incorrect</string>
+    <string name="network_toast_urlexist">The network configuration already exists</string>
+
+    <!-- 用户角色管理 用户角色功能已经不用了。-->
+    <string name="curusers_setting">用户信息设置</string>
+    <string name="curusers_user">Proxy User</string>
+    <string name="curusers_role">用户角色</string>
+    <string name="curusers_curuser">当前用户</string>
+
+    <!-- 关于   关于页面已经没有了，后面重新规划 -->
+    <string name="about_copyright">Copyright Information</string>
+    <string name="about_productName">%%APPNAME%%</string>
+    <string name="about_serviceTel">Tel：18092454068</string>
+    <string name="about_productAllName">AppName：%%APPNAME%%</string>
+    <string name="about_productVer">Version：V %%VERSION%%</string>
+    <string name="about_productUrl">IP：www.khinf.com</string>
+
+
+    <!-- 密码修改 -->
+    <string name="username">UserName</string>
+    <string name="pwdupdate_input">Password</string>
+    <string name="pwdupdate_inputhint">Please enter a new password</string>
+    <string name="pwdupdate_reput">Confirm</string>
+    <string name="pwdupdate_reputhint">Please enter your new password again</string>
+    <string name="pwdupdate_error_1">Please Input New Password</string>
+    <string name="pwdupdate_error_2">Please Confirm New Password</string>
+    <string name="pwdupdate_error_3">The passwords you typed do not match,Type the same password in both text boxes.</string>
+
+    <string name="scan">Scan</string>
+    <string name="not_useful_address">Non valid address</string>
+    <string name="network_hint1">Name</string>
+    <string name="network_hint2">Server</string>
+    <string name="backlog_info1">You have [ %1$s ] message</string>
+    <string name="backlog_tip1">message notification</string>
+    <string name="backlog_info">You have [ %1$s ] to do [ %2$s ]。</string>
+    <string name="backlog_tip">To do</string>
+
+</resources>

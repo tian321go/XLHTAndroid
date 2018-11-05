@@ -1,0 +1,204 @@
+<resources>
+
+    <string name="app_name">WorkCenter</string>
+
+    <string name="axeac_label">Axeac WorkCenter</string>
+    <string name="axeac_labelleft">Axeac</string>
+
+    <string name="settings_demo">Demo</string>
+
+    <!-- 系统按钮 -->
+    <string name="axeac_btn_home">Home</string>
+    <string name="axeac_btn_refresh">Refresh</string>
+    <string name="axeac_btn_return">Back</string>
+    <string name="axeac_btn_history">History</string>
+
+    <string name="axeac_main_1">Home</string>
+    <string name="axeac_main_2">Navigation</string>
+    <string name="axeac_main_3">Setting</string>
+
+
+    <string name="axeac_login_loading">Loading&#8230;</string>
+
+    <!-- 提示信息 -->
+    <string name="axeac_msg_ftp">FTP address is empty</string>
+    <string name="axeac_msg_describe">Location Description</string>
+    <string name="axeac_msg_write">Write in the area below</string>
+    <string name="axeac_msg_sdcard_noexist">SD card does not exist</string>
+    <string name="axeac_msg_choice">please choose</string>
+    <string name="axeac_msg_choice_ex">The maximum is exceeded, please reselect&#8230;</string>
+    <string name="axeac_msg_choice_img_note">Select the "Picture Select" mode&#8230;</string>
+    <string name="axeac_msg_choice_file_nil">You have not selected any files!</string>
+    <string name="axeac_msg_table_go_error">Please enter the correct page number!</string>
+    <string name="axeac_msg_loginout">Are you sure you want to exit the system?</string>
+    <string name="axeac_msg_gallery">Gallery</string>
+    <string name="axeac_msg_camera">Camera</string>
+    <string name="axeac_msg_sign">Sign</string>
+    <string name="axeac_labeltext_phone">Phone</string>
+    <string name="axeac_labeltext_msg">Msg</string>
+    <string name="axeac_msg_rootpath">Root directory</string>
+    <string name="axeac_msg_pervpath">Up</string>
+    <string name="axeac_msg_type_sendmail_soft">Please select the mail sending software</string>
+    <string name="axeac_msg_type_input_error">The input format is not correct. Please re-enter it!</string>
+    <string name="axeac_msg_default_skip">Default link</string>
+
+    <string name="axeac_msg_prompt">System hint</string>
+    <string name="axeac_msg_confirm">Confirm</string>
+    <string name="axeac_msg_cancel">Cancel</string>
+    <string name="axeac_msg_add">Add</string>
+    <string name="axeac_msg_modify">Modify</string>
+    <string name="axeac_msg_delete">Delete</string>
+    <string name="axeac_msg_setting">Setting</string>
+    <string name="axeac_msg_request">Apply</string>
+    <string name="axeac_msg_see">View</string>
+    <string name="axeac_msg_close">Close</string>
+    <string name="axeac_msg_query">Query</string>
+    <string name="axeac_msg_clear">Clear</string>
+    <string name="axeac_msg_send">Send</string>
+    <string name="axeac_msg_save">Save</string>
+    <string name="axeac_msg_more">More</string>
+    <string name="axeac_msg_over">Finish</string>
+    <string name="axeac_msg_size">Size</string>
+    <string name="axeac_msg_matter">Content</string>
+    <string name="axeac_msg_approve">Approval</string>
+    <string name="axeac_msg_unknow">Unknow</string>
+    <string name="axeac_key0">0</string>
+    <string name="axeac_key1">1</string>
+
+
+    <string name="axeac_download_prompt">Download tips</string>
+    <string name="axeac_download_prompt_msg">Please wait while downloading files&#8230;</string>
+    <string name="axeac_download_fail_nosdcard">The file download failed. Please check the SD card!</string>
+    <string name="axeac_download_fail_ioexp">Failed to read file stream, download failed!</string>
+    <string name="axeac_download_succ_toast">The file download is successful! Are you sure you want to open it?</string>
+    <string name="axeac_download_open_exp">File open exception, did not find the corresponding browser!</string>
+    <string name="axeac_download_next">Click to download next %1$s data.</string>
+    <string name="axeac_download_nomore">There is no data</string>
+    <string name="axeac_download_operate">Operate</string>
+
+
+    <!-- Toast -->
+    <string name="axeac_toast_exp_sign">Exception</string>
+    <string name="axeac_toast_exp_nonesign">You do not have a signature</string>
+    <string name="axeac_toast_exp_notitle">Empty Title</string>
+    <string name="axeac_toast_exp_title">Title</string>
+    <string name="axeac_toast_exp_inputing">Typing&#8230;</string>
+    <string name="axeac_toast_exp_errortoast">Errpor message:</string>
+    <string name="axeac_toast_exp_adjunct">Attachment list</string>
+    <string name="axeac_toast_exp_getpagefail">Failed to get the number of files</string>
+    <string name="axeac_toast_exp_contentisnil">The text is empty!</string>
+    <string name="axeac_toast_exp_nodata">No data</string>
+    <string name="axeac_toast_exp_tovideopath">Please specify a video path&#8230;</string>
+    <string name="axeac_toast_exp_op">The action button executes an exception!</string>
+    <string name="axeac_toast_exp_execop">An exception occurred by [@@TT@@]</string>
+    <string name="axeac_toast_exp_erciqingqiu">Secondary request operation</string>
+    <string name="axeac_toast_exp_returnformnil">The returned form is empty!</string>
+    <string name="axeac_toast_exp_create">Create the @@TT@@ component exception!</string>
+    <string name="axeac_toast_exp_click">The component action event executes an exception!</string>
+    <string name="axeac_toast_exp_arg">The parameters are not configured correctly!</string>
+    <string name="axeac_toast_exp_reqdata">Requesting the latest data from the server&#8230;</string>
+    <string name="axeac_toast_exp_loadnodata">No data loaded!</string>
+    <string name="axeac_toast_exp_loadexp">Load data exception!</string>
+    <string name="axeac_toast_exp_loadfail">Failed to load data!</string>
+    <string name="axeac_toast_exp_funexp">Component @@TT@@ Method exception!</string>
+    <string name="axeac_toast_exp_vilcomp">The validation component encountered an exception!</string>
+    <string name="axeac_toast_exp_pwderror">The password entered is incorrect. Please enter it again!</string>
+    <string name="axeac_toast_exp_vilfail">%%TT%% is faliure to pass the %%VAL%% condition validation!</string>
+    <string name="axeac_toast_exp_notnil">%%TT%% can not be empty, please re-fill!</string>
+    <string name="axeac_toast_exp_between">%%TT%% must be between %%VAL%%, please re-fill!</string>
+    <string name="axeac_toast_exp_between_and">and</string>
+    <string name="axeac_toast_exp_include">%%TT%% must contain %%VAL%%, please re-fill!</string>
+    <string name="axeac_toast_exp_uninclude">%%TT%% does not inccluded %%VAL%%, please re-fill!</string>
+    <string name="axeac_toast_exp_regex">%%TT%% must conform to regular expressions %%VAL%%, please re-fill!</string>
+
+
+
+
+    <!-- 地图 -->
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="axeac_map_point_start">As a starting point</string>
+    <string name="axeac_map_point_end">As the end point</string>
+    <string name="axeac_map_point_remove">Remove the point</string>
+    <string name="axeac_map_count_max">The number of coordinate points beyond the limit!</string>
+    <string name="axeac_map_gps_disable">GPS does not turn on, please turn on GPS!</string>
+    <string name="axeac_map_gps_exp">Turn on the GPS setup exception!</string>
+    <string name="axeac_map_searching">Searching：</string>
+    <string name="axeac_map_search_route">Getting line&#8230;</string>
+    <string name="axeac_map_no_result">No relevant results!</string>
+    <string name="axeac_map_conn_error">Network connection error!</string>
+    <string name="axeac_map_search_fail">Search failed, please check the network connection!</string>
+
+    <!-- 二维码 -->
+    <string name="axeac_barcode_msg_scanner">Scan barcode/QR code</string>
+    <string name="axeac_barcode_msg_camera_framework_bug">There was a problem with the Android camera. You may need to reboot your device.</string>
+    <string name="axeac_barcode_msg_redirect">Redirect</string>
+    <string name="axeac_barcode_msg_google_books">Google Books</string>
+    <string name="axeac_barcode_msg_google_product">Google Shopping</string>
+    <string name="axeac_barcode_msg_default_status">Please scan the barcode/QR code in the frame</string>
+    <string name="axeac_barcode_msg_unmount_usb">SD card is not accessible.</string>
+    <string name="axeac_barcode_encode_contents_failed">t is not possible to generate QR code from existing data.</string>
+
+    <!-- HtmlList -->
+    <string name="axeac_refresh_pull_label">Pull down to refresh&#8230;</string>
+    <string name="axeac_refresh_more_label">More&#8230;</string>
+    <string name="axeac_refresh_release_label">Let go refresh&#8230;</string>
+    <string name="axeac_refresh_refreshing_label">Loading&#8230;</string>
+
+    <!-- GPS -->
+    <string name="axeac_gps_loading">Locating&#8230;</string>
+    <string name="axeac_gps_unknow">Unknown geography</string>
+    <string name="axeac_gps_exp_used">The GPS component calls the google api exception!</string>
+    <string name="axeac_gps_exp_jiexi">The GPS component calls the google api exception!</string>
+
+    <!-- InfoButton -->
+    <string name="axeac_info_call">Call</string>
+    <string name="axeac_info_sendmsg">Send sms</string>
+    <string name="axeac_info_sendmail">Send email</string>
+    <string name="axeac_info_savetobook">Save to Contacts</string>
+    <string name="axeac_info_inputmsgcontent">Please enter SMS content</string>
+    <string name="axeac_info_inputmailtitle">Please enter a mail header</string>
+    <string name="axeac_info_inputmailcontent">Please enter the mail content</string>
+    <string name="axeac_info_choosemailsoft">Please select the mail sending software</string>
+    <string name="axeac_info_typenotnil">Type or content is empty&#8230;</string>
+
+    <!-- OperatingButton -->
+    <string name="axeac_op_huanjie">Select the link</string>
+    <string name="axeac_op_chuliren">Select handlers</string>
+    <string name="axeac_has_choiced_person">Selected handler</string>
+
+
+    <string name="axeac_create">Create</string>
+    <string name="axeac_scan_failed">Scan failed</string>
+    <string name="axeac_scaning">Scaning&#8230;</string>
+    <string name="axeac_bottom_hint">Recommended with the lens to maintain 10CM distance, try to avoid backlight and shadow</string>
+    <string name="axeac_top_hint">The QR code will be placed in the viewfinder system will automatically scan</string>
+    <string name="axeac_msg_camera_framework_bug">There was a problem with the Android camera. You may need to reboot your device.</string>
+    <string name="axeac_button_ok">Confirm</string>
+    <string name="axeac_cancel">Cancel</string>
+    <string name="axeac_faile_xiexi">Resolving the picture failed</string>
+
+
+    <string name="axeac_loadingView_empty">There is no data~</string>
+    <string name="axeac_loadingView_error_msg">Data request failed, click reload</string>
+    <string name="axeac_fail_warning">Execution of component %1$s[%2$s] failed</string>
+    <string name="axeac_backlog_count">The to do count is %1$s</string>
+    <string name="axeac_code2d">QR code image data</string>
+    <string name="axeac_choose_pic">Select Image</string>
+    <string name="axeac_table_number">Column %1$s</string>
+
+
+    <!-- 请求返回信息 -->
+    <string name="axeac_response_notconnected">The server did not return the data correctly! State value：</string>
+    <string name="axeac_response_connect_failure">Connection to the server failed!</string>
+    <string name="axeac_response_connect_timeout">The connection to the server timed out!</string>
+    <string name="axeac_response_dealwith_failure">Request processing failed! Exception information：</string>
+    <string name="axeac_response_notinternet">Your device is not connected to the network. Please try to set up a network connection&#8230;</string>
+    <string name="axeac_host_big">host is error</string>
+
+    <!-- Sign -->
+    <string name="axeac_sign_clear">Clear</string>
+    <string name="axeac_sign_save">Save</string>
+
+    <!-- ImageShowActivity -->
+    <string name="axeac_preview_title">Adjunct Preview</string>
+</resources>

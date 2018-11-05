@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/gridlabel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dip">
+
+        <View
+            android:id="@+id/viewicon"
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/axeac_gridtitle_iconview" />
+
+        <TextView
+            android:id="@+id/gridlabel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/viewicon"
+            android:layout_toRightOf="@+id/viewicon"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/gridlabel_layout"
+        android:background="#e1e1e1"/>
+
+    <com.axeac.android.sdk.customview.MyGridView
+        android:layout_below="@+id/lineview"
+        android:id="@+id/grid_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dip"
+        android:visibility="visible"
+        android:paddingBottom="10dp"></com.axeac.android.sdk.customview.MyGridView>
+
+</RelativeLayout>

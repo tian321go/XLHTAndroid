@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/axeac_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="版权信息" />
+
+    <TextView
+        android:id="@+id/axeac_appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:text="AXEAC" />
+
+    <TextView
+        android:id="@+id/axeac_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:text="CopyRight©2015-2018 Happy Tiger" />
+</LinearLayout>

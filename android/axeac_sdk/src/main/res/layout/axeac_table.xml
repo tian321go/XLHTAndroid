@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/table_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#292421">
+
+        <TextView
+            android:id="@+id/table_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/axeac_toast_exp_title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/table_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/axeac_msg_add"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/table_del_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/axeac_msg_delete"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/table_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/table_title"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/table_list_titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+             />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_list_titles">
+
+            <ScrollView
+                android:id="@+id/table_list_datas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none"></ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/table_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/table_title">
+
+        <RelativeLayout
+            android:id="@+id/table_left_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#a4d3ee" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_left_titles">
+
+            <com.axeac.android.sdk.ui.base.ObservableScrollView
+                android:id="@+id/table_left_datas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none"></com.axeac.android.sdk.ui.base.ObservableScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/table_right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_title"
+        android:layout_toRightOf="@id/table_left">
+
+        <RelativeLayout
+            android:id="@+id/table_right_titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#a4d3ee">
+
+            <com.axeac.android.sdk.ui.base.SyncHorizontalScrollView
+                android:id="@+id/table_right_titles_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_right_titles">
+
+            <com.axeac.android.sdk.ui.base.ObservableScrollView
+                android:id="@+id/table_right_datas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none">
+
+                <com.axeac.android.sdk.ui.base.SyncHorizontalScrollView
+                    android:id="@+id/table_right_datas_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" />
+            </com.axeac.android.sdk.ui.base.ObservableScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/table_nav_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_list"
+        android:background="#eeeeee">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_list_first"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_first" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_list_prev"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/table_nav_list_first"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_prev" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_list_next"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/table_nav_list_prev"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_next" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_list_last"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/table_nav_list_next"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_last" />
+
+        <Button
+            android:id="@+id/table_nav_list_go"
+            android:layout_width="34dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="8dip"
+            android:background="#02a3f4"
+            android:gravity="center"
+            android:text="GO"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/table_nav_list_totpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/table_nav_list_go"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/table_nav_list_xiexian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/table_nav_list_totpage"
+            android:text="/"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/table_nav_list_no"
+            android:layout_width="30dip"
+            android:layout_height="24dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_toLeftOf="@id/table_nav_list_xiexian"
+            android:background="@drawable/axeac_bg_edit"
+            android:inputType="number"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/table_nav_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_right"
+        android:background="#eeeeee">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_part_first"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_first" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_part_prev"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/table_nav_part_first"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_prev" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_part_next"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/table_nav_part_prev"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_next" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/table_nav_part_last"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/table_nav_part_next"
+            android:background="#00000000"
+            android:src="@drawable/axeac_page_last" />
+
+        <com.axeac.android.sdk.customview.AutoButtonView
+            android:id="@+id/table_nav_part_go"
+            android:layout_width="34dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="8dip"
+            android:background="#02a3f4"
+            android:gravity="center"
+            android:text="GO"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/table_nav_part_totpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/table_nav_part_go"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/table_nav_part_xiexian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/table_nav_part_totpage"
+            android:text="/"
+            android:textColor="@color/black" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/table_nav_part_no"
+            android:layout_width="30dip"
+            android:layout_height="24dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_toLeftOf="@id/table_nav_part_xiexian"
+            android:background="@drawable/axeac_bg_edit"
+            android:inputType="number"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/table_nav_no"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/table_left"
+        android:background="#5c5c5c"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/table_nav_allnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

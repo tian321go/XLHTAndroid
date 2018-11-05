@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp" >
+
+    <TextView
+        android:id="@+id/label_choice_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/axeac_label_choice_disable"
+        android:singleLine="true"
+        android:gravity="center"
+        android:padding="8dip"
+        android:textColor="@color/black" />
+    
+    <ImageView 
+         android:id="@+id/label_choice_check"
+         android:layout_width="20dip"
+         android:layout_height="20dip"
+         android:src="@drawable/axeac_label_choice_check" />
+
+</RelativeLayout>

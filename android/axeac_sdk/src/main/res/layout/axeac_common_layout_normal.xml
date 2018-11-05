@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f2f2f2">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/axeac_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/settings_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/menu_item_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/menu_item_first_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_centerHorizontal="true"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/axeac_btn_add" />
+
+                    <TextView
+                        android:id="@+id/menu_item_first_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/menu_item_first_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="#2B99FB"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/menu_item_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/menu_item_second_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_centerHorizontal="true"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/index1" />
+
+                    <TextView
+                        android:id="@+id/menu_item_second_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/menu_item_second_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="#2B99FB"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/settings_layout_center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/settings_layout_bottom"
+        android:layout_below="@id/toolbar"></FrameLayout>
+
+</RelativeLayout>

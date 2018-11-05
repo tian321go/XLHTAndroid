@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dip">
+
+        <RelativeLayout
+            android:id="@+id/activity_sign_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp">
+
+            <ImageButton
+                android:id="@+id/imagebackbutton"
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/axeac_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/imagebackbutton"
+                android:text="@string/axeac_btn_return"
+                android:textColor="#2B99FB"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_sign_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/imageclearbutton"
+                android:layout_width="23dip"
+                android:layout_height="23dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/axeac_btn_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/imageclearbutton"
+                android:text="@string/axeac_sign_clear"
+                android:textColor="#2B99FB"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_sign_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp">
+
+            <ImageButton
+                android:id="@+id/imagesavebutton"
+                android:layout_width="23dip"
+                android:layout_height="23dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/axeac_btn_saved"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/imagesavebutton"
+                android:text="@string/axeac_sign_save"
+                android:textColor="#2B99FB"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.axeac.android.sdk.customview.PaintingView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/activity_sign_view"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

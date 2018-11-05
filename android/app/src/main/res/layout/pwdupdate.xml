@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/username"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:hint="Demo"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/pwdupdate_input"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/pwdupdate_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:hint="@string/pwdupdate_inputhint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/pwdupdate_reput"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/pwdupdate_reput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:singleLine="true"
+            android:hint="@string/pwdupdate_reputhint"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>

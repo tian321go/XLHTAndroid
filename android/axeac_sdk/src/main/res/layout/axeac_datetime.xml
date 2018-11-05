@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/labeldatetime"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <com.axeac.android.sdk.ui.datetime.DateView
+        android:id="@+id/labeldatetime_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.axeac.android.sdk.ui.datetime.DateView
+        android:id="@+id/labeldatetime_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.axeac.android.sdk.ui.datetime.DateView
+        android:id="@+id/labeldatetime_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    
+    <com.axeac.android.sdk.ui.datetime.DateView
+        android:id="@+id/labeldatetime_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <com.axeac.android.sdk.ui.datetime.DateView
+        android:id="@+id/labeldatetime_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>

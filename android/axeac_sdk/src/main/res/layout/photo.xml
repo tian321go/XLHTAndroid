@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.axeac.android.sdk.customview.PhotoselectorGridView
+        android:id="@+id/photo_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+    </com.axeac.android.sdk.customview.PhotoselectorGridView>
+
+</RelativeLayout>

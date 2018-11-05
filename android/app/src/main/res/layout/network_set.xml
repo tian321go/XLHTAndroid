@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/network_serverdesc"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/network_serverdesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:hint="@string/network_hint1"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#030303"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/network_serverip"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/network_serverip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:hint="@string/network_hint2"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#030303"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/network_serverport"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/network_serverport"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="25813"
+            android:textColor="#030303"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/network_isHttps"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <Button
+            android:id="@+id/btn_ishttps"
+            android:layout_width="55dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/axeac_switch_close" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:text="@string/network_servername"
+            android:textColor="#030303"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/network_servername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="HttpServer"
+            android:textColor="#030303"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>

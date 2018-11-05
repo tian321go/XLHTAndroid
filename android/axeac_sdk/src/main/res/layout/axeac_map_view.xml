@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/map_searchbox"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dip"-->
+        <!--android:padding="5dip" >-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/axeac_map_searchbar_bg" >-->
+
+            <!--<Button-->
+                <!--android:id="@+id/map_search_icon"-->
+                <!--android:layout_width="30dip"-->
+                <!--android:layout_height="30dip"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="5dip"-->
+                <!--android:layout_marginRight="5dip"-->
+                <!--android:background="@drawable/axeac_map_search" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/map_search_del"-->
+                <!--android:layout_width="30dip"-->
+                <!--android:layout_height="30dip"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="5dip"-->
+                <!--android:layout_marginRight="5dip"-->
+                <!--android:background="@drawable/axeac_map_delete" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/map_search_input"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="40dip"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toLeftOf="@id/map_search_del"-->
+                <!--android:layout_toRightOf="@id/map_search_icon"-->
+                <!--android:background="#00000000"-->
+                <!--android:hint="Search"-->
+                <!--android:textSize="20sp" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <com.axeac.android.sdk.customview.MapContainer
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+            <!--android:layout_below="@id/map_searchbox"-->
+
+    </com.axeac.android.sdk.customview.MapContainer>
+
+
+</RelativeLayout>

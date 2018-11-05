@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.axeac.android.sdk.customview.AutoButtonView
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/systembutton_text"
+        android:background="@drawable/axeac_round_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

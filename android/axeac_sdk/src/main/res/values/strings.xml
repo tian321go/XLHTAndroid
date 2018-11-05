@@ -1,0 +1,213 @@
+<resources>
+
+    <string name="app_name">WorkCenter</string>
+
+    <string name="axeac_label">快虎信息</string>
+    <string name="axeac_labelleft">快虎</string>
+    <!--<string name="axeac_label">神华福建晋江热电有限公司</string>-->
+    <!--<string name="axeac_labelleft">晋江热电</string>-->
+
+    <string name="settings_demo">演示系统</string>
+
+    <!-- 系统按钮 -->
+    <string name="axeac_btn_home">首页</string>
+    <string name="axeac_btn_refresh">刷新</string>
+    <string name="axeac_btn_return">返回</string>
+    <string name="axeac_btn_history">历史</string>
+
+    <string name="axeac_main_1">主页</string>
+    <string name="axeac_main_2">导航</string>
+    <string name="axeac_main_3">设置</string>
+
+
+    <string name="axeac_login_loading">系统加载中&#8230;</string>
+
+    <!-- 提示信息 -->
+    <string name="axeac_msg_ftp">ftp地址为空</string>
+    <string name="axeac_msg_describe">位置描述</string>
+    <string name="axeac_msg_write">请下面区域进行手写操作</string>
+    <string name="axeac_msg_sdcard_noexist">SD卡不存在或插入异常</string>
+    <string name="axeac_msg_choice">请选择</string>
+    <string name="axeac_msg_choice_ex">超出最大选项，请重新选择&#8230;</string>
+    <string name="axeac_msg_choice_img_note">请选择“图片选择”模式&#8230;</string>
+    <string name="axeac_msg_choice_file_nil">您未选择任何文件！</string>
+    <string name="axeac_msg_table_go_error">请输入正确的页码！</string>
+    <string name="axeac_msg_loginout">确定要退出系统吗？</string>
+    <string name="axeac_msg_gallery">图库</string>
+    <string name="axeac_msg_camera">拍照</string>
+    <string name="axeac_msg_sign">签名</string>
+    <string name="axeac_labeltext_phone">拨打电话</string>
+    <string name="axeac_labeltext_msg">发送信息</string>
+    <string name="axeac_msg_rootpath">根目录</string>
+    <string name="axeac_msg_pervpath">上一层</string>
+    <string name="axeac_msg_type_sendmail_soft">请选择邮件发送软件</string>
+    <string name="axeac_msg_type_input_error">输入格式不正确，请重新输入！</string>
+    <string name="axeac_msg_default_skip">默认环节</string>
+
+    <string name="axeac_msg_prompt">系统提示</string>
+    <string name="axeac_msg_confirm">确定</string>
+    <string name="axeac_msg_cancel">取消</string>
+    <string name="axeac_msg_add">新增</string>
+    <string name="axeac_msg_modify">修改</string>
+    <string name="axeac_msg_delete">删除</string>
+    <string name="axeac_msg_setting">设置</string>
+    <string name="axeac_msg_request">申请</string>
+    <string name="axeac_msg_see">查看</string>
+    <string name="axeac_msg_close">关闭</string>
+    <string name="axeac_msg_query">查询</string>
+    <string name="axeac_msg_clear">清空</string>
+    <string name="axeac_msg_send">发送</string>
+    <string name="axeac_msg_save">保存</string>
+    <string name="axeac_msg_more">更多</string>
+    <string name="axeac_msg_over">完成</string>
+    <string name="axeac_msg_size">大小</string>
+    <string name="axeac_msg_matter">正文</string>
+    <string name="axeac_msg_approve">审批</string>
+    <string name="axeac_msg_unknow">未知</string>
+    <string name="axeac_key0">0</string>
+    <string name="axeac_key1">1</string>
+
+
+    <string name="axeac_download_prompt">下载提示</string>
+    <string name="axeac_download_prompt_msg">正在下载文件请您稍候&#8230;</string>
+    <string name="axeac_download_fail_nosdcard">文件下载失败，请检查SD卡是否正常！</string>
+    <string name="axeac_download_fail_ioexp">读取文件流异常，下载失败！</string>
+    <string name="axeac_download_succ_toast">文件下载成功！确定要打开吗？</string>
+    <string name="axeac_download_open_exp">文件打开异常，未找到对应的浏览程序！</string>
+    <string name="axeac_download_next">点击加载下%1$s条数据</string>
+    <string name="axeac_download_nomore">没有数据了</string>
+    <string name="axeac_download_operate">操作</string>
+
+
+    <!-- Toast -->
+    <string name="axeac_toast_exp_sign">有异常</string>
+    <string name="axeac_toast_exp_nonesign">您没有签名</string>
+    <string name="axeac_toast_exp_notitle">空标题</string>
+    <string name="axeac_toast_exp_title">标题</string>
+    <string name="axeac_toast_exp_inputing">正在输入&#8230;</string>
+    <string name="axeac_toast_exp_errortoast">错误提示:</string>
+    <string name="axeac_toast_exp_adjunct">附件列表</string>
+    <string name="axeac_toast_exp_getpagefail">获取文件页数失败</string>
+    <string name="axeac_toast_exp_contentisnil">文本内容为空!</string>
+    <string name="axeac_toast_exp_nodata">暂无数据</string>
+    <string name="axeac_toast_exp_tovideopath">请指定视频路径&#8230;</string>
+    <string name="axeac_toast_exp_op">操作按钮执行异常!</string>
+    <string name="axeac_toast_exp_execop">执行操作 [@@TT@@] 异常!</string>
+    <string name="axeac_toast_exp_erciqingqiu">二次请求操作</string>
+    <string name="axeac_toast_exp_returnformnil">返回的表单内容为空!</string>
+    <string name="axeac_toast_exp_create">创建@@TT@@组件异常!</string>
+    <string name="axeac_toast_exp_click">组件操作事件执行异常!</string>
+    <string name="axeac_toast_exp_arg">参数配置不正确!</string>
+    <string name="axeac_toast_exp_reqdata">正在向服务器请求最新数据，请稍等&#8230;</string>
+    <string name="axeac_toast_exp_loadnodata">已无加载数据!</string>
+    <string name="axeac_toast_exp_loadexp">加载数据异常!</string>
+    <string name="axeac_toast_exp_loadfail">加载数据失败!</string>
+    <string name="axeac_toast_exp_funexp">组件@@TT@@方法异常!</string>
+    <string name="axeac_toast_exp_vilcomp">验证组件出现异常!</string>
+    <string name="axeac_toast_exp_pwderror">输入的密码错误，请重新输入!</string>
+    <string name="axeac_toast_exp_vilfail">%%TT%%未通过%%VAL%%条件验证!</string>
+    <string name="axeac_toast_exp_notnil">%%TT%%不能为空，请重新填写!</string>
+    <string name="axeac_toast_exp_between">%%TT%%必须在%%VAL%%之间，请重新填写!</string>
+    <string name="axeac_toast_exp_between_and">和</string>
+    <string name="axeac_toast_exp_include">%%TT%%必须包含%%VAL%%，请重新填写!</string>
+    <string name="axeac_toast_exp_uninclude">%%TT%%不包含%%VAL%%，请重新填写!</string>
+    <string name="axeac_toast_exp_regex">%%TT%%必须符合正则表达式%%VAL%%，请重新填写!</string>
+
+
+
+
+    <!-- 地图 -->
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="axeac_map_point_start">设为起点</string>
+    <string name="axeac_map_point_end">设为终点</string>
+    <string name="axeac_map_point_remove">移除该点</string>
+    <string name="axeac_map_count_max">超出限定的坐标点个数！</string>
+    <string name="axeac_map_gps_disable">GPS未开启，请打开GPS功能！</string>
+    <string name="axeac_map_gps_exp">打开GPS设置异常!</string>
+    <string name="axeac_map_searching">正在搜索：</string>
+    <string name="axeac_map_search_route">正在获取线路&#8230;</string>
+    <string name="axeac_map_no_result">无相关结果！</string>
+    <string name="axeac_map_conn_error">网络连接错误！</string>
+    <string name="axeac_map_search_fail">搜索失败，请检查网络连接！</string>
+
+    <!-- 二维码 -->
+    <string name="axeac_barcode_msg_scanner">扫描条码/二维码</string>
+    <string name="axeac_barcode_msg_camera_framework_bug">抱歉，Android相机出现问题，您可能需要重启设备。</string>
+    <string name="axeac_barcode_msg_redirect">重定向</string>
+    <string name="axeac_barcode_msg_google_books">谷歌图书</string>
+    <string name="axeac_barcode_msg_google_product">谷歌购物</string>
+    <string name="axeac_barcode_msg_default_status">请将条码/二维码置于取景框内扫描</string>
+    <string name="axeac_barcode_msg_unmount_usb">抱歉，SD卡不可访问。</string>
+    <string name="axeac_barcode_encode_contents_failed">无法根据已有数据生成二维码。</string>
+
+    <!-- HtmlList -->
+    <string name="axeac_refresh_pull_label">下拉刷新&#8230;</string>
+    <string name="axeac_refresh_more_label">更多&#8230;</string>
+    <string name="axeac_refresh_release_label">松手刷新&#8230;</string>
+    <string name="axeac_refresh_refreshing_label">载入中&#8230;</string>
+
+
+    <!-- GPS -->
+    <string name="axeac_gps_loading">正在定位&#8230;</string>
+    <string name="axeac_gps_unknow">未知地理</string>
+    <string name="axeac_gps_exp_used">GPS组件调用google api异常!</string>
+    <string name="axeac_gps_exp_jiexi">GPS组件解析google api返回数据异常!</string>
+
+    <!-- InfoButton -->
+    <string name="axeac_info_call">呼叫</string>
+    <string name="axeac_info_sendmsg">发短信</string>
+    <string name="axeac_info_sendmail">发送邮件</string>
+    <string name="axeac_info_savetobook">保存到联系人</string>
+    <string name="axeac_info_inputmsgcontent">请输入短信内容</string>
+    <string name="axeac_info_inputmailtitle">请输入邮件标题</string>
+    <string name="axeac_info_inputmailcontent">请输入邮件内容</string>
+    <string name="axeac_info_choosemailsoft">请选择邮件发送软件</string>
+    <string name="axeac_info_typenotnil">类型或内容为空&#8230;</string>
+
+    <!-- OperatingButton -->
+    <string name="axeac_op_huanjie">选择环节</string>
+    <string name="axeac_op_chuliren">选择处理人</string>
+    <string name="axeac_has_choiced_person">已选处理人</string>
+
+
+    <string name="axeac_create">生成</string>
+    <string name="axeac_scan_failed">扫描失败</string>
+    <string name="axeac_scaning">正在扫描&#8230;</string>
+    <string name="axeac_bottom_hint">建议与镜头保持10CM距离，尽量避免逆光和阴影</string>
+    <string name="axeac_top_hint">将二维码置于取景框内系统会自动扫描</string>
+    <string name="axeac_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="axeac_button_ok">确定</string>
+    <string name="axeac_cancel">取消</string>
+    <string name="axeac_faile_xiexi">解析图片失败</string>
+
+
+    <string name="axeac_loadingView_empty">暂时没有啦~</string>
+    <string name="axeac_loadingView_error_msg">数据请求失败，点击重新加载</string>
+    <string name="axeac_fail_warning">执行组件%1$s[%2$s]失败</string>
+    <string name="axeac_backlog_count">共有%1$s 条待办</string>
+    <string name="axeac_code2d">二维码图片数据</string>
+    <string name="axeac_choose_pic">选择图片</string>
+    <string name="axeac_table_number">第%1$s列</string>
+
+
+    <!-- 请求返回信息 -->
+    <string name="axeac_response_notconnected">服务器没有正确返回数据！状态值：</string>
+    <string name="axeac_response_connect_failure">与服务器连接失败！</string>
+    <string name="axeac_response_connect_timeout">与服务器连接超时！</string>
+    <string name="axeac_response_dealwith_failure">请求处理失败！异常信息：</string>
+    <string name="axeac_response_notinternet">您的设备未连接网络，请您设置网络连接后重试&#8230;</string>
+    <string name="axeac_host_big">端口设置不正确</string>
+
+    <!-- Sign -->
+    <string name="axeac_sign_clear">重写</string>
+    <string name="axeac_sign_save">保存</string>
+
+    <!-- LabelText -->
+    <string name="axeac_labeltext_hint">请输入</string>
+
+    <!-- ImageShowActivity -->
+    <string name="axeac_preview_title">附件预览</string>
+
+    <!-- CopyrightAcvitity -->
+    <string name="copyrightTitle">版权信息</string>
+</resources>

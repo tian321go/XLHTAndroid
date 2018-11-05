@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="370dip" >
+
+    <TextView
+        android:id="@+id/label_click_text"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="39dip"
+        android:textColor="@color/textcontent"/>
+
+    <RelativeLayout
+        android:id="@+id/label_click_btn_l"
+        android:layout_width="37dip"
+        android:layout_height="37dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/label_click_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/axeac_next" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

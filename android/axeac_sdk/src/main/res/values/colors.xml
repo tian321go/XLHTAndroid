@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    
+    <color name="textcontent">#888888</color>
+    <color name="texthint">#B2B2B2</color>
+    <color name="texturl">#3396FB</color>
+    <color name="labellisttext">#cfcfcf</color>
+    <color name="linecolor">#cccccc</color>
+
+    <color name="background">#FFFFFF</color>
+
+    <color name="capture_text_cover_bg">#99535353</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="little_blue">#32A8DF</color>
+
+    <color name="tv_main_bottom">#d0d0d0</color>
+    <color name="tv_main_bottom1">#333333</color>
+
+    <color name="bantouming">#11000000</color>
+    <color name="status_focused">#55696969</color>
+
+    <color name="multiple_image_select_primaryDark">#1976d2</color>
+    <color name="multiple_image_select_primaryLight">#1976d2</color>
+    <color name="multiple_image_select_primary">#02a3f4</color>
+
+</resources>

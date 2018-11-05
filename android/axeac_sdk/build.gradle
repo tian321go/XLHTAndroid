@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.jph.takephoto:takephoto_library:4.0.2'
+    compile 'com.github.ikidou:FragmentBackHandler:2.1'
+    compile 'com.artemzin.rxjava:proguard-rules:1.1.5.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/commons-net-3.0.1.jar')
+    compile files('libs/AMap2DMap_4.2.0_AMapSearch_5.1.0_AMapLocation_3.4.0_20170517.jar')
+    compile 'com.youth.banner:banner:1.4.10'
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+}
+
+
+//def androidSDKDir = plugins.getPlugin('com.android.library').sdkHandler.getSdkFolder()
+def androidSDKDir = project.android.sdkDirectory
+def androidJarDir = androidSDKDir.toString() + '/platforms/' + "${android.compileSdkVersion}" + '/android.jar'
+
+task pro(type: proguard.gradle.ProGuardTask, dependsOn: ['buildJar']) {
+    injars('build/libs/axeac_sdk.jar')
+    outjars('build/libs/axeac_sdk_pro.jar')
+    libraryjars(androidJarDir)
+    configuration 'proguard-rules.pro'
+}
+
+task buildJar(dependsOn: ['compileReleaseJavaWithJavac'], type: Jar) {
+
+    appendix = "demo"
+    baseName = "androidJar"
+    version = "1.0.0"
+    classifier = "release"
+
+    //后缀名
+    extension = "jar"
+    //最终的 Jar 包名，如果没设置，默认为 [baseName]-[appendix]-[version]-[classifier].[extension]
+    archiveName = "axeac_sdk.jar"
+
+    //需打包的资源所在的路径集
+    def srcClassDir = [project.buildDir.absolutePath + "/intermediates/classes/release"];
+    //初始化资源路径集
+    from srcClassDir
+
+    //去除路径集下部分的资源
+    exclude "com/axeac/android/sdk/BuildConfig.class"
+    exclude "com/axeac/android/sdk/BuildConfig\$*.class"
+    exclude "**/R.class"
+    exclude "**/R\$*.class"
+
+    //只导入资源路径集下的部分资源
+    include "com/axeac/android/sdk/**/*.class"
+
+    //注: exclude include 支持可变长参数
+}
+
+

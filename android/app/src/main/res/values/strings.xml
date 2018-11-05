@@ -1,0 +1,169 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >>
+
+    <string name="app_name">AXEAC</string>
+    <!--<string name="app_name">晋电移动办公</string>-->
+
+    <string name="login_input_username">账号</string>
+    <string name="login_input_password">密码</string>
+    <string name="login_input_username_hint">请输入账号</string>
+    <string name="login_input_password_hint">请输入密码</string>
+    <string name="login_input_serverinf_hint">默认服务器名称</string>
+    <string name="login_select_savepassword">记住密码</string>
+    <string name="login_btn_login">登录</string>
+    <string name="found_new">"发现新版本,请您下载更新&#8230;"</string>
+    <string name="no_new">"无最新版本&#8230;"</string>
+
+    <!-- 登录页面 -->
+    <string name="init_loading">连接服务器失败,登录超时</string>
+    <string name="login_loading">系统加载中&#8230;</string>
+    <string name="login_username_hint">请输入账号&#8230;</string>
+    <string name="login_password_hint">请输入密码&#8230;</string>
+    <string name="login_url_hint">请输入服务器地址&#8230;</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">注册</string>
+    <string name="login_visitor">游客</string>
+    <string name="login_issavepwd">是否保存密码</string>
+    <string name="login_defaulturl">默认服务器名称</string>
+    <string name="login_usernotnull">用户名不能为空&#8230;</string>
+    <string name="login_pwdnotnull">密码不能为空&#8230;</string>
+    <string name="login_pwderror">密码需由数字及字母组成,不小于6位&#8230;</string>
+    <string name="login_pwderrormsg">请联系管理员进行修改&#8230;</string>
+    <string name="login_urlnotnull">服务器URL为空，不能进行有效的链接&#8230;</string>
+    <string name="login_pressedexit">再按一次退出程序！</string>
+
+    <string name="server_list">服务器列表</string>
+
+    <string name="axeac_back">返回</string>
+
+
+    <!-- 下载 -->
+    <string name="download_prompt">下载提示</string>
+    <string name="download_prompt_msg">正在下载文件请您稍候&#8230;</string>
+    <string name="download_fail_nosdcard">文件下载失败，请检查SD卡是否正常！</string>
+    <string name="download_fail_ioexp">读取文件流异常，下载失败！</string>
+    <string name="download_succ_toast">文件下载成功！确定要打开吗？</string>
+    <string name="download_apk_prompt">版本更新提示</string>
+    <string name="download_apk_confirm">确定更新</string>
+    <string name="download_apk_cancel">取消更新</string>
+    <string name="download_apk_nosdcard">SD卡不存在，无法更新下载！</string>
+    <string name="download_apk_done">下载完成！请点击确定按钮安装，如果不想安装请点击取消按钮！</string>
+    <string name="download_open_exp">文件打开异常，未找到对应的浏览程序！</string>
+
+
+    <!-- 设置页面 -->
+    <string name="settings_label">设置</string>
+    <string name="copy">设备标识复制成功</string>
+    <string name="clearcache">清理成功</string>
+
+    <string name="settings_deviceid">设备标识</string>
+    <string name="settings_curusers">用户角色设置</string>
+    <string name="settings_indexsetups">首页设置</string>
+    <string name="settings_systemsetups">系统设置</string>
+    <string name="settings_network">网络设置</string>
+    <string name="settings_clearcache">清除缓存</string>
+    <string name="settings_demo">演示系统</string>
+    <string name="settings_network_add">新增配置</string>
+    <string name="settings_network_modify">修改配置</string>
+    <string name="settings_certmanager">证书管理</string>
+    <string name="settings_certfile">证书信息</string>
+    <string name="settings_password">密码设置</string>
+    <string name="settings_binding">绑定设置</string>
+    <string name="settings_messagebox">消息盒子</string>
+    <string name="settings_instantmessage">即时通讯</string>
+    <string name="settings_flowcount">流量统计</string>
+    <string name="settings_gridview">宫格式导航</string>
+    <string name="settings_listview">列表导航</string>
+    <string name="settings_updatepwd">账号管理</string>
+    <string name="settings_sysadmin">系统管理员</string>
+    <string name="settings_about">关于我们</string>
+    <string name="settings_exit">退出登录</string>
+    <string name="settings_freshicon">刷新导航</string>
+    <string name="settings_loginout">登出系统</string>
+
+    <!-- 系统设置 -->
+    <string name="systemsetups_thirdverify">第三方验证</string>
+    <string name="systemsetups_usevpn">使用VPN</string>
+    <string name="systemsetups_checknewversion">检测新版本</string>
+    <string name="systemsetups_backgroundmsg">开启后台消息</string>
+    <string name="systemsetups_msgtimes">消息轮询周期</string>
+    <string name="systemsetups_usecert">使用证书</string>
+    <string name="systemsetups_choosetimes">请填写时间（时间范围1-60）</string>
+    <string name="systemsetups_y">确定</string>
+    <string name="systemsetups_n">取消</string>
+    <string name="systemsetups_success">设置成功</string>
+    <string name="systemsetups_fail">设置失败</string>
+
+    <!-- 网络管理 -->
+    <string name="network_serverdesc">配置名称</string>
+    <string name="network_isHttps">Label</string>
+    <string name="network_serverip">Server</string>
+    <string name="network_serverport">端口</string>
+    <string name="network_servername">Service</string>
+    <string name="network_toast_descnotnull">HTTP配置名称不能为空&#8230;</string>
+    <string name="network_toast_httpipnotnull">HTTP服务地址不能为空&#8230;</string>
+    <string name="network_toast_httpportnotnull">HTTP服务端口不能为空&#8230;</string>
+    <string name="network_toast_httpnamenotnull">HTTP服务名称不能为空&#8230;</string>
+    <string name="network_toast_ftpportnotnull">FTP服务端口不能为空&#8230;</string>
+    <string name="network_toast_ftppathnotnull">FTP远程目录不能为空&#8230;</string>
+    <string name="network_toast_vpnipnotnull">VPN服务器地址不能为空&#8230;</string>
+    <string name="network_toast_vpnportnotnull">VPN服务器端口不能为空&#8230;</string>
+    <string name="network_toast_descexist">该服务器名称已存在&#8230;</string>
+    <string name="network_toast_urlnotnull">服务器连接地址格式不正确，请重新输入&#8230;</string>
+    <string name="network_toast_urlexist">该网络配置已存在&#8230;</string>
+
+    <!-- 用户角色管理 -->
+    <string name="curusers_setting">用户信息设置</string>
+    <string name="curusers_user">代理用户</string>
+    <string name="curusers_role">用户角色</string>
+    <string name="curusers_curuser">当前用户</string>
+
+    <!-- 关于 -->
+    <string name="about_copyright">版权信息</string>
+    <string name="about_productName">%%APPNAME%%</string>
+    <string name="about_serviceTel">客服电话：18092454068</string>
+    <string name="about_productAllName">产品名称：%%APPNAME%%</string>
+    <string name="about_productVer">软件版本：V %%VERSION%%</string>
+    <string name="about_productUrl">公司网址：www.khinf.com</string>
+
+    <!-- 流量统计 -->
+    <string name="flowcount_clear">清空数据记录</string>
+    <string name="flowcount_curtx">本次发送</string>
+    <string name="flowcount_currx">本次接收</string>
+    <string name="flowcount_curcount">本次总计</string>
+    <string name="flowcount_alltx">历史发送</string>
+    <string name="flowcount_allrx">历史接收</string>
+    <string name="flowcount_allcount">历史总计</string>
+
+    <!-- 密码修改 -->
+    <string name="username">用户账号</string>
+    <string name="pwdupdate_input">新密码</string>
+    <string name="pwdupdate_inputhint">请输入新的密码</string>
+    <string name="pwdupdate_reput">确认密码</string>
+    <string name="pwdupdate_reputhint">请再次输入新密码</string>
+
+    <string name="pwdupdate_error_1">请输入新密码！</string>
+    <string name="pwdupdate_error_2">请输入密码确认！</string>
+    <string name="pwdupdate_error_3">两次输入密码不一致，请确认输入内容！</string>
+
+    <string name="scan">扫描</string>
+    <string name="not_useful_address">非有效地址</string>
+    <string name="network_hint1">自定义名称</string>
+    <string name="network_hint2">域名 或 IP 地址</string>
+    <string name="backlog_info1">您有[ %1$s ] 的消息</string>
+    <string name="backlog_tip1">消息提醒</string>
+    <string name="backlog_info">您有[ %1$s ]待办[ %2$s ]条。</string>
+    <string name="backlog_tip">待办提醒</string>
+
+
+    <string name="address">Server Address:</string>
+    <string name="port">Server Port:</string>
+    <string name="secret">Shared Secret:</string>
+    <string name="connect">Connect!</string>
+
+    <string name="connecting">ToyVPN is connecting...</string>
+    <string name="connected">ToyVPN is connected!</string>
+    <string name="disconnected">ToyVPN is disconnected!</string>
+
+</resources>

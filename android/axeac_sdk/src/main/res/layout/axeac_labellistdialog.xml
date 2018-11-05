@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/labellist_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_below="@+id/labellist_linearlayout"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/labellist_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/axeac_msg_cancel"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/texturl"
+            android:background="@drawable/labellist_canclestroke"/>
+
+        <TextView
+            android:id="@+id/labellist_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/axeac_msg_confirm"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/texturl"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

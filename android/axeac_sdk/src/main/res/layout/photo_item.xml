@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/photo_item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/axeac_btn_add" />
+
+    <ImageView
+        android:id="@+id/photo_item_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:layout_alignRight="@+id/photo_item_image"
+        android:layout_alignTop="@+id/photo_item_image"
+        android:src="@drawable/axeac_del_normal"/>
+
+</RelativeLayout>

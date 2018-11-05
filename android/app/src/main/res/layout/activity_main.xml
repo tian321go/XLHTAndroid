@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/axeac_toolbar" />
+
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/ll_tab_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e1e1e1" />
+
+        <LinearLayout
+            android:id="@+id/tab_rg_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/clickableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+                    android:id="@+id/img_icon1"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/index01" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/axeac_main_1"
+                    android:textColor="#2B99FB"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/clickableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp">
+
+
+                <ImageView
+                    android:id="@+id/img_icon2"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/index2" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/axeac_main_2"
+                    android:textColor="#2B99FB"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/clickableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp">
+
+
+                <ImageView
+                    android:id="@+id/img_icon3"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/index3" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/axeac_main_3"
+                    android:textColor="#2B99FB"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.axeac.android.sdk.customview.MyTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </com.axeac.android.sdk.customview.MyTabHost>
+
+
+</RelativeLayout>
